@@ -1,0 +1,12 @@
+.footer-bottom {
+    background-color: shade($gray-darker, 10%) !important;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #ddd;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: center;
+}

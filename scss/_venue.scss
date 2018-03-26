@@ -1,0 +1,25 @@
+#venue {
+  background-image: url(../img/lecture-hall-dark.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+}
+.google-maps {
+    position: relative;
+    padding-bottom: 100%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+    max-width: 600px;
+    max-height: 450px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      padding-bottom: 40%;
+    }
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}

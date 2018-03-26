@@ -1,0 +1,102 @@
+$parallax-perspective : 1 !default;
+$parallax-element     : "body" !default;
+$parallax-ios         : true !default; 
+
+@mixin parallax-init(
+  $perspective  : $parallax-perspective,
+  $element      : $parallax-element,
+  $parallax-ios : $parallax-ios
+  ) {
+  @if $element == "body" {
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  }
+  #{$element} {
+    overflow: auto;
+    perspective: $perspective * 1px;
+    transform-style: preserve-3d;
+    // Allows for smooth scrolling but disables parallax effects.
+    @if $parallax-ios == false {
+      -webkit-overflow-scrolling: touch;
+    }
+    // Preserve 3D
+    &, * {
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+    }
+  }
+}
+
+@mixin parallax(
+  $distance    : 0,
+  $perspective : $parallax-perspective
+  ) {
+  transform:
+    translateZ($distance * $perspective * 1px)
+    scale(abs($distance - 1))
+  ;
+  z-index: $distance * 1000;
+}
+
+@-moz-document url-prefix() {
+  @include parallax-init;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__group {
+  position: relative;
+  //height: 100vh;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+section {
+  position: relative;
+  z-index: 100;
+}
+.parallax__layer--base {
+  @include parallax(0);
+  z-index: -1;
+}
+.parallax__layer--back {
+  @include parallax(-0.5);
+  z-index: -1;
+}
+.parallax__layer--deep {
+  @include parallax(-1);
+  z-index: -1;
+}
+.parallax__layer--deeper {
+  @include parallax(-1.5);
+  z-index: -1;
+}
+.parallax__layer--deepest {
+  @include parallax(-2);
+  z-index: -1;
+}
+
+//Webkit fix
+.parallax {
+  perspective-origin-x: 100%;
+}
+.parallax__layer {
+  transform-origin-x: 100%;
+}
+

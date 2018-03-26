@@ -1,0 +1,103 @@
+// Styling for the navbar
+#mainNav {
+    border-color: fade-out($gray-darker, .95);
+    background-color: rgba($gray-darker, 0.8);
+    @include sans-serif-font;
+    @include transition-all;
+    .navbar-brand {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #FFF;
+        @include sans-serif-font;
+        &:hover,
+        &:focus {
+            color: darken($theme-color-1, .1);
+        }
+        img {
+            max-height: 45px;
+        }
+    }
+    .navbar-toggler {
+      margin-top: 5px;
+    }
+    .navbar-nav {
+        > li.nav-item {
+            padding: 0 5px;
+            > a.nav-link,
+            > a.nav-link:focus {
+                font-size: 13px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #FFF;
+                &:hover {
+                    color: $theme-color-1;
+                    cursor: pointer;
+                }
+                &.active {
+                    color: $theme-color-1 !important;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        border-color: fade-out(white, .7);
+        .navbar-brand {
+            color: #FFF; 
+            img {
+              max-height: 60px;
+            }
+            &:hover,
+            &:focus {
+                color: $gray-darker;
+            }
+        }
+        .navbar-nav > li.nav-item > a.nav-link,
+        .navbar-nav > li.nav-item > a.nav-link:focus {
+            color: #FFF;
+            &:hover {
+                color: fade-out(white, .3);
+            }
+        }
+        &.navbar-shrink {
+            border-color: fade-out($gray-darker, .95);
+            background-color: $gray-darker;
+            .navbar-brand {
+                font-size: 16px;
+                color: #FFF;
+                &:hover,
+                &:focus {
+                    color: darken($theme-color-1, .1);
+                }
+            }
+            .navbar-nav > li.nav-item > a.nav-link,
+            .navbar-nav > li.nav-item > a.nav-link:focus {
+                color: #FFF;
+                &:hover {
+                    color: darken($theme-color-1, .1);
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.collapse {
+    display: block !important;
+}
+
+.navbar-toggler {
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    nav > .container {
+        width: 100%;
+    }
+}

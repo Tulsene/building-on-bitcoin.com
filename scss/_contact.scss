@@ -1,0 +1,35 @@
+@include font-face("Source Code Pro", "../fonts/SourceCodePro-Regular", regular, ttf otf);
+@include font-face("Source Code Pro", "../fonts/SourceCodePro-Bold", bold, ttf otf);
+
+.code {
+  font-family: "Source Code Pro", serif;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  &.color-1 {
+    background-color: $theme-color-1;
+    &:hover {
+      background-color: tint($theme-color-1, 10%);
+      text-decoration: none;
+    }
+  }
+  &.color-2 {
+    background-color: $theme-color-2;
+  }
+}
+
+.domain {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%; left: 5%;
+    transform: translate(0,-50%);
+  }
+}
+.nounderline {
+  text-decoration: none !important;
+}
