@@ -1,7 +1,7 @@
 // Styling for the navbar
 #mainNav {
     border-color: fade-out($gray-darker, .95);
-    background-color: rgba($gray-darker, 0.8);
+    background-color: rgba($gray-darker, 0.65);
     @include sans-serif-font;
     @include transition-all;
     .navbar-brand {

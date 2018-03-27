@@ -1,0 +1,16 @@
+{
+  "name": "Building-on-Bitcoin",
+  "version": "0.1.0",
+  "description": "Website for the Lisboa conference",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tulsene/building-on-bitcoin"
+  },
+  "dependencies": {
+    "gulp": "*",
+    "gulp-sass": "*",
+    "browser-sync": "*"
+  },
+  "scripts": { "dev": "gulp" }
+}
