@@ -92,12 +92,9 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #626373; }
 
-.parallax {
-  background: #222; }
-
 #mainNav {
   border-color: rgba(98, 99, 115, 0.05);
-  background-color: rgba(98, 99, 115, 0.65);
+  background-color: rgba(66, 67, 78, 0.9);
   font-family: 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -112,7 +109,8 @@ body {
     #mainNav .navbar-brand img {
       max-height: 45px; }
   #mainNav .navbar-toggler {
-    margin-top: 5px; }
+    margin-top: 5px;
+    cursor: pointer; }
   #mainNav .navbar-nav > li.nav-item {
     padding: 0 5px; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -166,7 +164,11 @@ body {
   overflow: hidden; }
 
 .collapse {
-  display: block !important; }
+  display: none; }
+
+.collapse.in {
+  height: 100%;
+  display: block; }
 
 .navbar-toggler {
   z-index: 1; }
@@ -454,70 +456,108 @@ header.masthead {
 .btn-xl {
   padding: 15px 30px; }
 
-@-moz-document url-prefix() {
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; }
-  body {
-    overflow: auto;
-    perspective: 1px;
-    transform-style: preserve-3d; }
-    body, body * {
-      transform-style: preserve-3d;
-      -webkit-transform-style: preserve-3d; } }
-
-.parallax {
-  perspective: 1px;
+#hero {
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll; }
+  overflow: hidden;
+  position: relative; }
+  #hero .hero-content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 15px 100px;
+    text-align: center; }
+    #hero .hero-content .hero-content-inner {
+      margin-top: 30vh;
+      color: #FEFEFE; }
+      #hero .hero-content .hero-content-inner h1 {
+        color: #FEFEFE;
+        font-size: 2em;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-transform: uppercase; }
+        #hero .hero-content .hero-content-inner h1 h2 {
+          margin-top: 15px; }
+      #hero .hero-content .hero-content-inner hr {
+        margin: 30px auto; }
+      #hero .hero-content .hero-content-inner p {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 50px;
+        color: rgba(255, 255, 255, 0.7); }
+      #hero .hero-content .hero-content-inner a {
+        margin-top: 20px; }
 
-.parallax__layer {
+.layer {
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; }
-
-.parallax__group {
-  position: relative;
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d; }
-
-section {
-  position: relative;
-  z-index: 100; }
-
-.parallax__layer--base {
-  transform: translateZ(0px) scale(1);
-  z-index: 0;
+  left: 0;
+  height: 100vh;
   z-index: -1; }
 
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
-  z-index: -1000;
-  z-index: -1; }
+#hero-mobile {
+  display: none;
+  background: url("../img/deep-mobile-blur.png") no-repeat center bottom/cover;
+  height: 320px;
+  margin-top: 68px; }
+  #hero-mobile .hero-content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 15px 100px;
+    text-align: center; }
+    #hero-mobile .hero-content .hero-content-inner {
+      margin-top: 0px;
+      color: #FEFEFE; }
+      #hero-mobile .hero-content .hero-content-inner h1 {
+        font-size: 1.42em;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-transform: uppercase; }
+      #hero-mobile .hero-content .hero-content-inner h2 {
+        font-size: 1.33em;
+        margin-top: 15px; }
+      #hero-mobile .hero-content .hero-content-inner hr {
+        margin: 30px auto; }
+      #hero-mobile .hero-content .hero-content-inner p {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 50px;
+        color: rgba(255, 255, 255, 0.7); }
+      #hero-mobile .hero-content .hero-content-inner a {
+        margin-top: 40px; }
 
-.parallax__layer--deep {
-  transform: translateZ(-2px) scale(3);
-  z-index: -2000;
-  z-index: -1; }
+#hero, .layer {
+  min-height: 100vh; }
 
-.parallax__layer--deeper {
-  transform: translateZ(-3px) scale(4);
-  z-index: -3000;
-  z-index: -1; }
+.layer-bg {
+  background-image: url("../img/deepest.svg"); }
 
-.parallax__layer--deepest {
-  transform: translateZ(-4px) scale(5);
-  z-index: -4000;
-  z-index: -1; }
+.layer-1 {
+  background-image: url("../img/deeper.svg"); }
 
-.parallax {
-  perspective-origin-x: 100%; }
+.layer-2 {
+  background-image: url("../img/deep.svg"); }
 
-.parallax__layer {
-  transform-origin-x: 100%; }
+.layer-3 {
+  background-image: url("../img/base.svg"); }
+
+.layer-4 {
+  background-image: url("../img/back.svg"); }
+
+.layer-overlay {
+  background-image: url("../img/back.svg"); }
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    display: none; }
+  #hero-mobile {
+    display: block; } }

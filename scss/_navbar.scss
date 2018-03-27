@@ -1,7 +1,7 @@
 // Styling for the navbar
 #mainNav {
     border-color: fade-out($gray-darker, .95);
-    background-color: rgba($gray-darker, 0.65);
+    background-color: rgba($gray-base, 0.9);
     @include sans-serif-font;
     @include transition-all;
     .navbar-brand {
@@ -19,6 +19,7 @@
     }
     .navbar-toggler {
       margin-top: 5px;
+      cursor:pointer;
     }
     .navbar-nav {
         > li.nav-item {
@@ -87,9 +88,12 @@
 .navbar {
     overflow: hidden;
 }
-
 .collapse {
-    display: block !important;
+    display:none;
+}
+.collapse.in {
+    height:100%;
+    display:block
 }
 
 .navbar-toggler {
@@ -100,4 +104,6 @@
     nav > .container {
         width: 100%;
     }
+
+
 }
