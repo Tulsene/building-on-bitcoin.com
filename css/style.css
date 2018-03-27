@@ -51,7 +51,12 @@ p {
 
 .bg-dark {
   color: white;
-  background-color: #626373 !important;
+  background-color: #222222 !important;
+  z-index: 10; }
+
+.bg-blue {
+  color: white;
+  background-color: #222222 !important;
   z-index: 10; }
 
 .text-faded {
@@ -492,23 +497,23 @@ section {
   z-index: -1; }
 
 .parallax__layer--back {
-  transform: translateZ(-0.5px) scale(1.5);
-  z-index: -500;
-  z-index: -1; }
-
-.parallax__layer--deep {
   transform: translateZ(-1px) scale(2);
   z-index: -1000;
   z-index: -1; }
 
+.parallax__layer--deep {
+  transform: translateZ(-2px) scale(3);
+  z-index: -2000;
+  z-index: -1; }
+
 .parallax__layer--deeper {
-  transform: translateZ(-1.5px) scale(2.5);
-  z-index: -1500;
+  transform: translateZ(-3px) scale(4);
+  z-index: -3000;
   z-index: -1; }
 
 .parallax__layer--deepest {
-  transform: translateZ(-2px) scale(3);
-  z-index: -2000;
+  transform: translateZ(-4px) scale(5);
+  z-index: -4000;
   z-index: -1; }
 
 .parallax {

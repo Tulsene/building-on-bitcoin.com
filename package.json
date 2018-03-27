@@ -12,5 +12,7 @@
     "gulp-sass": "*",
     "browser-sync": "*"
   },
-  "scripts": { "dev": "gulp" }
+  "scripts": {
+    "dev": "gulp"
+  }
 }
