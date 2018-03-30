@@ -60,7 +60,12 @@ p {
 
 .bg-dark {
     color: white;
-    background-color: $gray-darker !important;
+    background-color: $dark-base !important;
+    z-index: 10;
+}
+.bg-blue {
+    color: $gray-lighter;
+    background-color: $dark-base !important;
     z-index: 10;
 }
 
@@ -106,6 +111,3 @@ body {
     -webkit-tap-highlight-color: $gray-darker;
 }
 
-.parallax {
-    background: #222;
-}

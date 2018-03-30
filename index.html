@@ -30,100 +30,71 @@
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="img/Logo_horiz_white.png" alt="Breaking Bitcoin"></a>
-            <div class="collapse navbar-collapse" id="navbar" style="height:0">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scrollDownTo('#about')">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scrollDownTo('#agenda')">Agenda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scrollDownTo('#tickets')">Tickets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scrollDownTo('#venue')">Venue</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scrollDownTo('#sponsors')">Sponsors</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scrollDownTo('#contact')">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+        <a class="navbar-brand" href="#page-top"><img src="img/Logo_horiz_white.png" alt="Breaking Bitcoin"></a>
+        <div class="navbar-collapse collapse" id="navbar-collapsible">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#agenda">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tickets">Tickets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#venue">Venue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sponsors">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <div class="parallax" id="scrollfix">
-    
-    <header class="masthead">
-        <div class="background__layer parallax-window parallax__layer parallax__layer--deepest"></div>
-        <div class="background__layer parallax__layer parallax__layer--deeper"></div>
-        <div class="background__layer parallax__layer parallax__layer--deep"></div>
-        <div class="background__layer parallax__layer parallax__layer--back"></div>
-        <div class="background__layer parallax__layer parallax__layer--base">
-            <div class="header-content">
-                <div class="header-content-inner">
-                  <div class="row">
+
+    <div id="hero">
+        <div class="layer-bg layer" data-type="parallax" data-depth="0"></div>
+        <div class="layer-1 layer" data-type="parallax" data-depth="0.50"></div>
+        <div class="layer-2 layer" data-type="parallax" data-depth="1"></div>
+        <div class="layer-3 layer" data-type="parallax" data-depth="1.5"></div>
+        <div class="layer-overlay layer" data-type="parallax" data-depth="2"></div>
+        <div class="hero-content">
+            <div class="hero-content-inner">
+                <div class="row">
                     <div class="col-md-5"></div>
-                    <div class="col-md-7" itemscope itemtype="http://schema.org/Event">
-                        <h1 id="homeHeading" itemprop="name">Building On Bitcoin <h2>Conference</h2></h1>
+                    <div class="col-md-7">
+                        <h1 id="homeHeading">Building on Bitcoin </h1><h2>Conferences</h2>
                         <hr>
-                        <h2 itemprop="startDate" content="2017-09-09T09:00">Lisboa Soon 2018</h2>
-                        <!-- Start : Metadatas -->
-                        <div style="display:none;">
-                            <section id="metalocation" itemprop="location" itemscope itemtype="http://schema.org/Place">
-                              <span itemprop="name">Building On Bitcoin Center</span>
-                                <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                  <span itemprop="streetAddress">Soon</span><br>
-                                  <span itemprop="addressLocality">Lisboa</span>,
-                                  <span itemprop="postalCode">Soon</span>
-                                  <span itemprop="addressCountry">Portugal</span>
-                                </div>
-                            </section>
-                            <section id="metaprices">
-                                <p>Prices:</p>
-                                  <ul>
-                                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                      <a itemprop="url" href="https://ti.to/breaking-bitcoin/breaking-bitcoin#student">
-                                        <span itemprop="name" content="Students">Students</span>
-                                        <span itemprop="price" content="100.00">
-                                          <span itemprop="priceCurrency" content="EUR">100€</span>
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                      <a itemprop="url" href="https://ti.to/breaking-bitcoin/breaking-bitcoin#normal">
-                                        <span itemprop="name" content="Normal Ticket"><strike>Normal Ticket</strike></span>
-                                        <span itemprop="price" content="150.00">
-                                          <span itemprop="priceCurrency" content="EUR"><strike>250€</strike></span>
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                                      <a itemprop="url" href="https://ti.to/breaking-bitcoin/breaking-bitcoin#normal">
-                                        <span itemprop="name" content="Corporate Ticket"><strike>Corporate Ticket/Late Birds</strike></span>
-                                        <span itemprop="price" content="250.00">
-                                          <span itemprop="priceCurrency" content="EUR"><strike>500€</strike></span>
-                                        </span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                            </section>
-                        </div>
-                        <!-- Stop : Metadatas -->
+                        <h2>Lisboa, Portugal, soon</h2>
+                        <a class="btn btn-primary btn-xl" href="#tickets">Book Tickets</a>
                     </div>
-                  </div>
                 </div>
             </div>
         </div>
-    </header>
-    <section class="bg-white" id="about">
+    </div>
+    <div id="hero-mobile">
+        <div class="hero-content">
+            <div class="hero-content-inner">
+                <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-7">
+                        <h1 id="homeHeading">Building on Bitcoin </h1><h2>Conferences</h2>
+                        <hr>
+                        <h2>Lisboa, Portugal, soon</h2>
+                        <a class="btn btn-primary btn-xl" href="#tickets">Book Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
@@ -136,7 +107,7 @@
             </div>
         </div>
     </section>
-    <section id="agenda" class= "bg-blue">
+    <section id="agenda" class="bg-blue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -232,230 +203,230 @@
                     <!--
                     <a href="https://twitter.com/nopara73" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/adamFiscor.jpg" width="180" height="180" alt="Adam Fiscor "/> 
-                            <span class="name">Adam Ficsor</span> 
-                            <span class="role">TumbleBit</span> 
+                            <img src="img/speakers/adamFiscor.jpg" width="180" height="180" alt="Adam Fiscor "/>
+                            <span class="name">Adam Ficsor</span>
+                            <span class="role">TumbleBit</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/sysmannet" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/alexPetrov.jpg" width="180" height="180" alt="Alex Petrov "/> 
-                            <span class="name">Alex Petrov</span> 
-                            <span class="role">Bitfury</span> 
+                            <img src="img/speakers/alexPetrov.jpg" width="180" height="180" alt="Alex Petrov "/>
+                            <span class="name">Alex Petrov</span>
+                            <span class="role">Bitfury</span>
                         </li>
                     </a>
                     <a href="http://www.alysekilleen.com" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/alyseKillen.jpg" width="180" height="180" alt="Alyse Killen "/> 
-                            <span class="name">Alyse Killeen</span> 
-                            <span class="role">VC</span> 
+                            <img src="img/speakers/alyseKillen.jpg" width="180" height="180" alt="Alyse Killen "/>
+                            <span class="name">Alyse Killeen</span>
+                            <span class="role">VC</span>
                         </li>
                     </a>
                     <a href="https://github.com/genjix" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/amirTaaki.jpg" width="180" height="180" alt="Amir Taaki "/> 
-                            <span class="name">Amir Taaki</span> 
-                            <span class="role">Autonomous Polytechnics Group</span> 
+                            <img src="img/speakers/amirTaaki.jpg" width="180" height="180" alt="Amir Taaki "/>
+                            <span class="name">Amir Taaki</span>
+                            <span class="role">Autonomous Polytechnics Group</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/khannib" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/antoineLeCalvez.jpg" width="180" height="180" alt="Antoine Le Calvez "/> 
-                            <span class="name">Antoine Le Calvez</span> 
-                            <span class="role">P2sh.info</span> 
+                            <img src="img/speakers/antoineLeCalvez.jpg" width="180" height="180" alt="Antoine Le Calvez "/>
+                            <span class="name">Antoine Le Calvez</span>
+                            <span class="role">P2sh.info</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/Snyke" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/christianDecker.jpg" width="180" height="180" alt="Christian Decker"/> 
-                            <span class="name">Dr Christian Decker</span> 
-                            <span class="role">Blockstream</span> 
+                            <img src="img/speakers/christianDecker.jpg" width="180" height="180" alt="Christian Decker"/>
+                            <span class="name">Dr Christian Decker</span>
+                            <span class="role">Blockstream</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/_chjj" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/christopherJeffrey.jpg" width="180" height="180" alt="Christopher Jeffrey"/> 
-                            <span class="name">Christopher Jeffrey</span> 
-                            <span class="role">Purse.io</span> 
+                            <img src="img/speakers/christopherJeffrey.jpg" width="180" height="180" alt="Christopher Jeffrey"/>
+                            <span class="name">Christopher Jeffrey</span>
+                            <span class="role">Purse.io</span>
                         </li>
                     </a>
                     <a href="https://gruss.cc" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/danielGruss.jpg" width="180" height="180" alt="Daniel Gruss "/> 
-                            <span class="name">Daniel Gruss</span> 
-                            <span class="role">Researcher at  Graz University of Technology</span> 
+                            <img src="img/speakers/danielGruss.jpg" width="180" height="180" alt="Daniel Gruss "/>
+                            <span class="name">Daniel Gruss</span>
+                            <span class="role">Researcher at  Graz University of Technology</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/starkness" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/elizabethStark.jpg" width="180" height="180" alt="Elizabeth Stark "/> 
-                            <span class="name">Elizabeth Stark</span> 
-                            <span class="role">Lightning Labs</span> 
+                            <img src="img/speakers/elizabethStark.jpg" width="180" height="180" alt="Elizabeth Stark "/>
+                            <span class="name">Elizabeth Stark</span>
+                            <span class="role">Lightning Labs</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/eric_lombrozo" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/ericLombrozo.jpg" width="180" height="180" alt="Eric Lombrozo"/> 
-                            <span class="name">Eric Lombrozo</span> 
-                            <span class="role">Ciphrex</span> 
+                            <img src="img/speakers/ericLombrozo.jpg" width="180" height="180" alt="Eric Lombrozo"/>
+                            <span class="name">Eric Lombrozo</span>
+                            <span class="role">Ciphrex</span>
                         </li>
                     </a>
                     <a href="https://www.linkedin.com/in/evoskuil" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/ericVoskuil.jpg" width="180" height="180" alt="Eric Voskuil "/> 
-                            <span class="name">Eric Voskuil</span> 
-                            <span class="role">Bitware</span> 
+                            <img src="img/speakers/ericVoskuil.jpg" width="180" height="180" alt="Eric Voskuil "/>
+                            <span class="name">Eric Voskuil</span>
+                            <span class="role">Bitware</span>
                         </li>
                     </a>
                     <a href="https://www.linkedin.com/in/fabrice-drouin-95ab8012" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/fabriceDrouin.jpg" width="180" height="180" alt="Fabrice Drouin "/> 
-                            <span class="name">Fabrice Drouin</span> 
-                            <span class="role">Acinq</span> 
-                            
+                            <img src="img/speakers/fabriceDrouin.jpg" width="180" height="180" alt="Fabrice Drouin "/>
+                            <span class="name">Fabrice Drouin</span>
+                            <span class="role">Acinq</span>
+
                         </li>
                     </a>
                     <a href="https://twitter.com/giacomozucco" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/giacomoZucco.jpg" width="180" height="180" alt="Giacomo Zucco "/> 
-                            <span class="name">Giacomo Zucco</span> 
-                            <span class="role">BHB Network</span> 
-                            
+                            <img src="img/speakers/giacomoZucco.jpg" width="180" height="180" alt="Giacomo Zucco "/>
+                            <span class="name">Giacomo Zucco</span>
+                            <span class="role">BHB Network</span>
+
                         </li>
                     </a>
                     <a href="https://twitter.com/james_hilliard" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/jamesHilliard.jpg" width="180" height="180" alt="James Hilliard "/> 
-                            <span class="name">James Hilliard</span> 
-                            <span class="role">MyRig</span> 
-                            
+                            <img src="img/speakers/jamesHilliard.jpg" width="180" height="180" alt="James Hilliard "/>
+                            <span class="name">James Hilliard</span>
+                            <span class="role">MyRig</span>
+
                         </li>
                     </a>
                     <a href="https://twitter.com/lopp" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/jamesonLopp.jpg" width="180" height="180" alt="Jameson Lopp "/> 
-                            <span class="name">Jameson Lopp</span> 
-                            <span class="role">BitGo</span> 
-                            
+                            <img src="img/speakers/jamesonLopp.jpg" width="180" height="180" alt="Jameson Lopp "/>
+                            <span class="name">Jameson Lopp</span>
+                            <span class="role">BitGo</span>
+
                         </li>
                     </a>
                     <a href="https://twitter.com/jimmysong" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/jimmySong.jpg" width="180" height="180" alt="Jimmy Song "/> 
-                            <span class="name">Jimmy Song</span> 
-                            <span class="role">Paxos</span> 
+                            <img src="img/speakers/jimmySong.jpg" width="180" height="180" alt="Jimmy Song "/>
+                            <span class="name">Jimmy Song</span>
+                            <span class="role">Paxos</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/KLoaec" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/kevinLoaec.jpg" width="180" height="180" alt="Kevin Loaec "/> 
-                            <span class="name">Kevin Loaec</span> 
-                            <span class="role">Chainsmiths</span> 
+                            <img src="img/speakers/kevinLoaec.jpg" width="180" height="180" alt="Kevin Loaec "/>
+                            <span class="name">Kevin Loaec</span>
+                            <span class="role">Chainsmiths</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/bit_kevin" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/kevinPan.jpg" width="180" height="180" alt="Kevin Pan "/> 
-                            <span class="name">Kevin pan</span> 
-                            <span class="role">Formerly of Btc.com</span> 
+                            <img src="img/speakers/kevinPan.jpg" width="180" height="180" alt="Kevin Pan "/>
+                            <span class="name">Kevin pan</span>
+                            <span class="role">Formerly of Btc.com</span>
                         </li>
                     </a>
                     <a href="https://www.linkedin.com/in/kimnilssonjp/" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/kimNilsson.jpg" width="180" height="180" alt="Kim Nilsson "/> 
-                            <span class="name">Kim Nilsson</span> 
-                            <span class="role">Wizsec</span> 
+                            <img src="img/speakers/kimNilsson.jpg" width="180" height="180" alt="Kim Nilsson "/>
+                            <span class="name">Kim Nilsson</span>
+                            <span class="role">Wizsec</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/roasbeef" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/laoluOsuntokun.jpg" width="180" height="180" alt="Laolu Osuntokun "/> 
-                            <span class="name">Laolu Osuntokun</span> 
-                            <span class="role">Lightning Labs</span> 
+                            <img src="img/speakers/laoluOsuntokun.jpg" width="180" height="180" alt="Laolu Osuntokun "/>
+                            <span class="name">Laolu Osuntokun</span>
+                            <span class="role">Lightning Labs</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/LarryBitcoin" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/lawrenceNahum.jpg" width="180" height="180" alt="Lawrence Nahum "/> 
-                            <span class="name">Lawrence Nahum</span> 
-                            <span class="role">Blockstream</span> 
+                            <img src="img/speakers/lawrenceNahum.jpg" width="180" height="180" alt="Lawrence Nahum "/>
+                            <span class="name">Lawrence Nahum</span>
+                            <span class="role">Blockstream</span>
                         </li>
                     </a>
                     <a href="https://www.linkedin.com/in/marekpalatinus/" target="_blank" style="text-decoration:none !important;">
                         <li>
                             <img src="img/speakers/marekPalatinus.jpg" width="180" height="180" alt="Marek Palatinus "/>
                             <span class="name">Marek Palatinus</span>
-                            <span class="role">SatoshiLabs</span> 
+                            <span class="role">SatoshiLabs</span>
                         </li>
                     </a>
                     <a href="https://www.linkedin.com/in/martapiekarska/?ppe=1" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/martaPiekarska.jpg" width="180" height="180" alt="Marta Piekarska "/> 
-                            <span class="name">Marta Piekarska</span> 
-                            <span class="role">Hyperledger</span> 
+                            <img src="img/speakers/martaPiekarska.jpg" width="180" height="180" alt="Marta Piekarska "/>
+                            <span class="name">Marta Piekarska</span>
+                            <span class="role">Hyperledger</span>
                         </li>
                     </a>
                     <a href="https://arxiv.org/find/cs/1/au:+Schwarz_M/0/1/0/all/0/1" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/michaelSchwarz.jpg" width="180" height="180" alt="Michael Schwarz "/> 
-                            <span class="name">Michael Schwarz</span> 
-                            <span class="role">Researcher at  Graz University of Technology</span> 
+                            <img src="img/speakers/michaelSchwarz.jpg" width="180" height="180" alt="Michael Schwarz "/>
+                            <span class="name">Michael Schwarz</span>
+                            <span class="role">Researcher at  Graz University of Technology</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/BTChip" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/nicolasBacca.jpg" width="180" height="180" alt="Nicolas Bacca "/> 
-                            <span class="name">Nicolas Bacca</span> 
-                            <span class="role">Ledger</span> 
+                            <img src="img/speakers/nicolasBacca.jpg" width="180" height="180" alt="Nicolas Bacca "/>
+                            <span class="name">Nicolas Bacca</span>
+                            <span class="role">Ledger</span>
                         </li>
                     </a>
                     <a href="http://www0.cs.ucl.ac.uk/staff/P.McCorry" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/patrickMcCorry.jpg" width="180" height="180" alt="Patrick McCorry "/> 
-                            <span class="name">Patrick McCorry</span> 
-                            <span class="role">UCL Researcher</span> 
+                            <img src="img/speakers/patrickMcCorry.jpg" width="180" height="180" alt="Patrick McCorry "/>
+                            <span class="name">Patrick McCorry</span>
+                            <span class="role">UCL Researcher</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/petertoddbtc" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/peterTodd.jpg" width="180" height="180" alt="Peter Todd "/> 
-                            <span class="name">Peter Todd</span> 
-                            <span class="role">Applied Cryptographer</span> 
+                            <img src="img/speakers/peterTodd.jpg" width="180" height="180" alt="Peter Todd "/>
+                            <span class="name">Peter Todd</span>
+                            <span class="role">Applied Cryptographer</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/nirenzang" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/renZhang.jpg" width="180" height="180" alt="Ren Zhang "/> 
-                            <span class="name">Ren Zhang</span> 
-                            <span class="role">PhD Student, KU Leuven</span> 
+                            <img src="img/speakers/renZhang.jpg" width="180" height="180" alt="Ren Zhang "/>
+                            <span class="name">Ren Zhang</span>
+                            <span class="role">PhD Student, KU Leuven</span>
                         </li>
                     </a>
                     <a href="https://webusers.imj-prg.fr/~ricardo.perez-marco" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/ricardoPerezMarco.jpg" width="180" height="180" alt="Ricardo Perez Marco "/> 
-                            <span class="name">Ricardo Perez Marco</span> 
-                            <span class="role">CNRS</span> 
+                            <img src="img/speakers/ricardoPerezMarco.jpg" width="180" height="180" alt="Ricardo Perez Marco "/>
+                            <span class="name">Ricardo Perez Marco</span>
+                            <span class="role">CNRS</span>
                         </li>
                     </a>
                     <a href="https://twitter.com/nono2357" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/renaudLifchitz.jpg" width="180" height="180" alt="Renaud Lifchitz "/> 
-                            <span class="name">Renaud Lifchitz</span> 
-                            <span class="role">Econocom</span> 
+                            <img src="img/speakers/renaudLifchitz.jpg" width="180" height="180" alt="Renaud Lifchitz "/>
+                            <span class="name">Renaud Lifchitz</span>
+                            <span class="role">Econocom</span>
                         </li>
                     </a>
-                    <a href="https://www.linkedin.com/in/thomasbertani/" target="_blank" style="text-decoration:none !important;"> 
+                    <a href="https://www.linkedin.com/in/thomasbertani/" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/thomasBertani.jpg" width="180" height="180" alt="Thomas Bertani "/> 
-                            <span class="name">Thomas Bertani</span> 
-                            <span class="role">OracliZe</span> 
+                            <img src="img/speakers/thomasBertani.jpg" width="180" height="180" alt="Thomas Bertani "/>
+                            <span class="name">Thomas Bertani</span>
+                            <span class="role">OracliZe</span>
                         </li>
                     </a>
-                    <a href="https://www.linkedin.com/in/thomas-voegtlin-0537435" target="_blank" style="text-decoration:none !important;"> 
+                    <a href="https://www.linkedin.com/in/thomas-voegtlin-0537435" target="_blank" style="text-decoration:none !important;">
                         <li>
-                            <img src="img/speakers/thomasVoegtlin.jpg" width="180" height="180" alt="Thomas Voegtlin "/> 
-                            <span class="name">Thomas Voegtlin</span> 
-                            <span class="role">Electrum</span> 
+                            <img src="img/speakers/thomasVoegtlin.jpg" width="180" height="180" alt="Thomas Voegtlin "/>
+                            <span class="name">Thomas Voegtlin</span>
+                            <span class="role">Electrum</span>
                         </li>
                     </a>
                 -->
@@ -464,7 +435,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-white" id="tickets">
+    <section id="tickets" class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
@@ -507,7 +478,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-white" id="sponsors">
+    <section id="sponsors" class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="text-center">
@@ -541,13 +512,12 @@
                     <h2 class="section-heading text-black">Sponsors</h2>
                     <hr class="invert">
                     <div class="separator"></div>
-<!--
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-6 offset-md-3">
-                                <a class="sponsor" href="https://www.ledgerwallet.com/" target="_blank">
+                                <!--<a class="sponsor" href="https://www.ledgerwallet.com/" target="_blank">
                                     <img class="img-fluid" src="img/sponsors/ledgerLogo.png" alt="Ledger">
-                                </a>
+                                </a>-->
                             </div>
                         </div>
                     </div>
@@ -565,38 +535,38 @@
                         <br /><br />
                         <div class="row">
                             <div class="col-md-2 offset-md-2">
-                                <a href="https://trezor.io/" class="sponsor" target="_blank">
+                                <!--<a href="https://trezor.io/" class="sponsor" target="_blank">
                                     <img class="img-fluid" src="img/sponsors/silver/trezor.png" alt="Trezor">
-                                </a>
+                                </a>-->
                             </div>
                             <div class="col-md-2">
-                                <a href="http://bhb.network/" class="sponsor" target="_blank">
+                                <!--<a href="http://bhb.network/" class="sponsor" target="_blank">
                                     <img class="img-fluid" src="img/sponsors/silver/bhb.png" alt="BHB Network">
-                                </a>
+                                </a>-->
                             </div>
 
                             <div class="col-md-2">
-                                <a href="https://z.cash/" class="sponsor" target="_blank">
+                                <!--<a href="https://z.cash/" class="sponsor" target="_blank">
                                     <img class="img-fluid" src="img/sponsors/silver/zcash.png" alt="Zcash">
-                                </a>
+                                </a>-->
                             </div>
                             <div class="col-md-2">
-                                <a href="http://chaincode.com/" class="sponsor" target="_blank">
+                                <!--<a href="http://chaincode.com/" class="sponsor" target="_blank">
                                     <img class="img-fluid" src="img/sponsors/silver/chaincode.png" alt="Chaincode">
-                                </a>
+                                </a>-->
                             </div>
                         </div>
                         <br /><br />
                         <div class="row">
                             <div class="col-md-2 offset-md-4">
-                                <a href="https://ciphrex.io/" class="sponsor" target="_blank">
+                                <!--<a href="https://ciphrex.io/" class="sponsor" target="_blank">
                                     <img class="img-fluid" src="img/sponsors/silver/ciphrex.png" alt="Ciphrex">
-                                </a>
+                                </a>-->
                             </div>
                             <div class="col-md-2">
-                                <a href="https://bitmainwarranty.com/" class="sponsor" target="_blank">
+                                <!--<a href="https://bitmainwarranty.com/" class="sponsor" target="_blank">
                                     <img src="img/sponsors/silver/myrig.png" alt="MyRIG" class="img-fluid">
-                                </a>
+                                </a>-->
                             </div>
                         </div>
                     </div>
@@ -613,58 +583,22 @@
                         <br /><br />
                         <div class="row">
                             <div class="col-md-2 offset-md-3">
-                                <a class="sponsor" href="https://www.woleet.io" target="_blank">
+                                <!--<a class="sponsor" href="https://www.woleet.io" target="_blank">
                                     <img class="img-fluid" src="img/sponsors/coal/woleetLogo.png" alt="Woleet">
-                                </a>
+                                </a>-->
                             </div>
                             <div class="col-md-2">
-                                <a class="sponsor" href="https://condensat.tech" target="_blank">
+                                <!--<a class="sponsor" href="https://condensat.tech" target="_blank">
                                     <img class="img-fluid" src="img/sponsors/coal/condensat.png" alt="Condensat technologies">
-                                </a>
+                                </a>-->
                             </div>
                             <div class="col-md-2">
-                                <a class="sponsor" href="https://blockstream.com" target="_blank">
+                                <!--<a class="sponsor" href="https://blockstream.com" target="_blank">
                                     <img class="img-fluid" src="img/sponsors/coal/blockstream.png" alt="Blockstream">
-                                </a>
+                                </a>-->
                             </div>
                         </div>
-                        <br /><br />
-                        <div class="row">
-                            <div class="col-md-2 offset-md-3">
-                                <a class="sponsor" href="https://ownest.io/" target="_blank">
-                                    <img class="img-fluid" src="img/sponsors/coal/ownest.png" alt="Ownest by Ledgys">
-                                </a>
-                            </div>
-                            <div class="col-md-2">
-                                <a class="sponsor" href="https://bity.com/" target="_blank">
-                                    <img class="img-fluid" src="img/sponsors/coal/bity.png" alt="Bity">
-                                </a>
-                            </div>
-                            <div class="col-md-2">
-                                <a class="sponsor" href="http://www.oraclize.it/" target="_blank">
-                                    <img class="img-fluid" src="img/sponsors/coal/oraclize.png" alt="Oraclize">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 offset-md-3">
-                                <a class="sponsor" href="https://bitonic.nl" target="_blank">
-                                    <img class="img-fluid" src="img/sponsors/coal/bitonic.png" alt="Bitonic">
-                                </a>
-                            </div>
-                            <div class="col-md-2">
-                                <a class="sponsor" href="https://inbitcoin.it/" target="_blank">
-                                    <img class="img-fluid" src="img/sponsors/coal/inbitcoin.png" alt="Inbitcoin">
-                                </a>
-                            </div>
-                            <div class="col-md-2">
-                                <a class="sponsor" href="https://www.eurekacertification.com/" target="_blank">
-                                    <img class="img-fluid" src="img/sponsors/coal/eureka.png" alt="Eureka">
-                                </a>
-                            </div>
 
-                        </div>
--->
                         <a href="sponsors/#" class="btn btn-primary btn-xl mt-4" type="application/pdf">Become a sponsor</a>
                     </div>
                     <div class="separator"></div>
@@ -761,8 +695,6 @@
             </div>
         </div>
     </div>
-    </div>
-
 
 
     <!-- Bootstrap core JavaScript -->
@@ -771,8 +703,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
-    <script src="js/scroll-fix.js"></script>
+    <script src="js/creative.js"></script>
 
 </body>
 
