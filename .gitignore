@@ -1,4 +1,5 @@
 ### Sass template
+nodes_modules/
 .sass-cache/
 .idea/
 .idea
