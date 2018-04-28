@@ -13,6 +13,7 @@
     "browser-sync": "*"
   },
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "test": "echo \"No tests\" && exit 0"
   }
 }
