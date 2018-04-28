@@ -68,11 +68,54 @@
             <div class="hero-content-inner">
                 <div class="row">
                     <div class="col-md-5"></div>
-                    <div class="col-md-7">
-                        <h1 id="homeHeading">Building on Bitcoin </h1><h2>Conferences</h2>
+                    <div class="col-md-7"  itemscope="" itemtype="http://schema.org/Event">
+                        <h1 id="homeHeading" itemprop="name">Building on Bitcoin </h1><h2>Conferences</h2>
                         <hr>
-                        <h2>Lisboa, Portugal, 23-24 June</h2>
+                        <h2>Lisboa, Portugal, <span itemprop="startDate" content="2018-06-23T09:00">23-24 June</span></h2>
                         <a class="btn btn-primary btn-xl" href="#tickets">Book Tickets</a>
+
+                        <!-- Start : Metadatas -->
+                        <div style="display:none;">
+                            <section id="metalocation" itemprop="location" itemscope="" itemtype="http://schema.org/Place">
+                                <span itemprop="name">Building on Bitcoin Center</span>
+                                <div class="address" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                                    <span itemprop="streetAddress">Av. Defensores de Chaves 85B</span><br>
+                                    <span itemprop="addressLocality">Lisboa</span>,
+                                    <span itemprop="postalCode">1000-070</span>
+                                    <span itemprop="addressCountry">Portugal</span>
+                                </div>
+                            </section>
+                            <section id="metaprices">
+                                <p>Prices:</p>
+                                <ul>
+                                    <li itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <a itemprop="url" href="https://ti.to/breaking-bitcoin/breaking-bitcoin#student">
+                                            <span itemprop="name" content="Students">Students</span>
+                                            <span itemprop="price" content="100.00">
+                                          <span itemprop="priceCurrency" content="EUR">100€</span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <a itemprop="url" href="https://ti.to/breaking-bitcoin/breaking-bitcoin#normal">
+                                            <span itemprop="name" content="Individual or startup"><strike>Individual or startup</strike></span>
+                                            <span itemprop="price" content="250.00">
+                                          <span itemprop="priceCurrency" content="EUR"><strike>250€</strike></span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <a itemprop="url" href="https://ti.to/breaking-bitcoin/breaking-bitcoin#corporate">
+                                            <span itemprop="name" content="Regular business / corporate / Late birds"><strike>Regular business / corporate / Late birds</strike></span>
+                                            <span itemprop="price" content="500.00">
+                                          <span itemprop="priceCurrency" content="EUR"><strike>500€</strike></span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <!-- Stop : Metadatas -->
                     </div>
                 </div>
             </div>
