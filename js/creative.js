@@ -1,3 +1,16 @@
+
+window.initMap = function(){
+    var uluru = {lat: 38.740291, lng: -9.144831};
+    var map = new google.maps.Map(document.getElementById('google-maps'), {
+        zoom: 14,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+};
+
 (function($) {
     "use strict"; // Start of use strict
 
@@ -24,6 +37,8 @@
         }
     });
 
+
+
     // Parallax
     $(window).scroll(function() {
         var depth, i, layer, layers, len, movement, topDistance, translate3d, index;
@@ -43,8 +58,6 @@
         }
     });
 
-
+    initMap();
 
 })(jQuery); // End of use strict
-
-
