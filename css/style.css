@@ -347,7 +347,7 @@ header.masthead {
   text-decoration: none !important; }
 
 .footer-bottom {
-  background-color: shade(#626373, 10%) !important;
+  background-color: #222222 !important;
   min-height: 30px;
   width: 100%; }
 
