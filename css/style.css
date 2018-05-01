@@ -292,7 +292,7 @@ header.masthead {
       font-weight: bold;
       display: block; }
     #confirmed-speakers li .role {
-      display: block;
+      display: none;
       font-size: 0.9em;
       margin-bottom: 2px; }
     #confirmed-speakers li .more {
