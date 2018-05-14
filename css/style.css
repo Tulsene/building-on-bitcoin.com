@@ -271,6 +271,9 @@ header.masthead {
     #google-maps {
       padding-bottom: 40%; } }
 
+#google-maps {
+  margin: 60px auto; }
+
 #confirmed-speakers {
   padding-left: 0; }
   #confirmed-speakers li {
@@ -299,11 +302,17 @@ header.masthead {
       font-weight: bold;
       font-size: 0.8em; }
 
+#sponsors {
+  padding-bottom: 0; }
+
 .chainsmiths {
   display: inline-block;
   max-width: 80%; }
   .chainsmiths img {
     max-width: 80%; }
+
+.separator {
+  margin-bottom: 40px; }
 
 @font-face {
   font-family: "Source Code Pro";
