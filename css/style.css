@@ -575,3 +575,7 @@ header.masthead {
   border-radius: 0px;
   font-family: 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
   cursor: pointer; }
+
+.paddingten {
+  padding: 10px !important;
+}
