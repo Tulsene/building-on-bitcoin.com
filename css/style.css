@@ -579,3 +579,7 @@ header.masthead {
 .paddingten {
   padding: 10px !important;
 }
+
+.no-text-decoration {
+  text-decoration:none !important;
+}
