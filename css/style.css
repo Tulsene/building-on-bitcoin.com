@@ -583,3 +583,7 @@ header.masthead {
 .no-text-decoration {
   text-decoration:none !important;
 }
+
+.padding-left-zero {
+  padding-left: 0px !important;
+}
