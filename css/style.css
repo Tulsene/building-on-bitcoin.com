@@ -308,6 +308,10 @@ header.masthead {
   .chainsmiths img {
     max-width: 80%; }
 
+.bhb-network {
+  max-width: 40%;
+  padding-top: 14%; }
+
 .separator {
   margin-bottom: 20px; }
 
@@ -575,15 +579,3 @@ header.masthead {
   border-radius: 0px;
   font-family: 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
   cursor: pointer; }
-
-.paddingten {
-  padding: 10px !important;
-}
-
-.no-text-decoration {
-  text-decoration:none !important;
-}
-
-.padding-left-zero {
-  padding-left: 0px !important;
-}
