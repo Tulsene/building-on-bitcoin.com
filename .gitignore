@@ -4,3 +4,6 @@ nodes_modules/
 .idea/
 .idea
 .DS_Store
+.swo
+.html.swp
+.swp
