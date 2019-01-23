@@ -1,7 +1,7 @@
 // Styling for the navbar
 #mainNav {
     border-color: fade-out($gray-darker, .95);
-    background-color: rgba($gray-base, 0.9);
+    background-color: rgba($gray-base, 0.6);
     @include sans-serif-font;
     @include transition-all;
     .navbar-brand {
@@ -27,7 +27,7 @@
             > a.nav-link,
             > a.nav-link:focus {
                 font-size: 13px;
-                font-weight: 400;
+                font-weight: 700;
                 text-transform: uppercase;
                 color: #FFF;
                 &:hover {
@@ -65,7 +65,7 @@
         }
         &.navbar-shrink {
             border-color: fade-out($gray-darker, .95);
-            background-color: $gray-darker;
+            background-color: rgba($gray-darker, 0.6);
             .navbar-brand {
                 font-size: 16px;
                 color: #FFF;

@@ -5,6 +5,8 @@
     $('a[href*="#"]:not([href="#"])').click(function(e) {
         e.preventDefault();
         var targetElem = $($(this).attr('href'));
+        console.log(targetElem[0].id);
+        window.location.hash  = targetElem[0].id;
         $('html, body').animate({
             scrollTop: $(targetElem).offset().top
         }, 'slow');

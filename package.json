@@ -1,6 +1,6 @@
 {
-  "name": "Building-on-Bitcoin",
-  "version": "0.1.0",
+  "name": "BreakingBitcoin",
+  "version": "0.2.0",
   "description": "Website for the Lisboa conference",
   "main": "server.js",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/tulsene/building-on-bitcoin"
   },
   "dependencies": {
-    "gulp": "*",
+    "gulp": "^3",
     "gulp-sass": "*",
     "browser-sync": "*"
   },
